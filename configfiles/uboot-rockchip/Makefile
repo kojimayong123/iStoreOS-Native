@@ -128,6 +128,13 @@ define U-Boot/tvi3315a-rk3399
     tvi_tvi3315a
 endef
 
+define U-Boot/smart-am40-rk3399
+  $(U-Boot/rk3399/Default)
+  NAME:=smart-am40
+  BUILD_DEVICES:= \
+    smart-am40
+endef
+
 define U-Boot/nanopc-t4-rk3399
   $(U-Boot/rk3399/Default)
   NAME:=NanoPC T4
