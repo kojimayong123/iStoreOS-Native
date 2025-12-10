@@ -43,7 +43,7 @@
 |-------------|:---------:| ----------------------------------------------------------------------- | ---------------------------- |
 | tvi3315a    |    ✅    | istoreos-rockchip-armv8-tvi_tvi3315a-squashfs-sysupgrade.img.gz         | 🟢 已测试                    |
 | jp-tvbox    |    ✅    | istoreos-rockchip-armv8-jp_jp-tvbox-squashfs-sysupgrade.img.gz          | 🟢 已测试                    |
-| 其他        |    ⏳    |                                                                          |                              |
+| smart-am40  |    ⏳    |                                                                          |                              |
 
 ✅ 支持 - ⏳ 计划中 - ⭕ 不支持
 
