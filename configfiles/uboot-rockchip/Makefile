@@ -128,11 +128,11 @@ define U-Boot/tvi3315a-rk3399
     tvi_tvi3315a
 endef
 
-define U-Boot/smart-am40-rk3399
+define U-Boot/am40-rk3399
   $(U-Boot/rk3399/Default)
-  NAME:=smart-am40
+  NAME:=AM40
   BUILD_DEVICES:= \
-    smart-am40
+    smart_am40
 endef
 
 define U-Boot/nanopc-t4-rk3399
@@ -363,7 +363,7 @@ UBOOT_TARGETS := \
   rock-pi-4-rk3399 \
   rockpro64-rk3399 \
   tvi3315a-rk3399 \
-  smart-am40-rk3399 \
+  am40-rk3399 \
   rock-pi-s-rk3308 \
   nanopi-r2c-rk3328 \
   nanopi-r2c-plus-rk3328 \
