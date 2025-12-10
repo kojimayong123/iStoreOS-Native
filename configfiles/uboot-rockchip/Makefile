@@ -356,6 +356,7 @@ UBOOT_TARGETS := \
   rock-pi-4-rk3399 \
   rockpro64-rk3399 \
   tvi3315a-rk3399 \
+  smart-am40-rk3399 \
   rock-pi-s-rk3308 \
   nanopi-r2c-rk3328 \
   nanopi-r2c-plus-rk3328 \
