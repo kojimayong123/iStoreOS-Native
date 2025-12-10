@@ -59,7 +59,7 @@
 - [istoreos](https://github.com/istoreos/istoreos)
 - [linux-6.6.y](https://github.com/unifreq/linux-6.6.y)
 - [Actions-iStoreOS-RK35XX-24.10](https://github.com/xiaomeng9597/Actions-iStoreOS-RK35XX-24.10)
-
+- [retro98boy-openwrt-24.10](https://github.com/retro98boy/openwrt/blob/24.10)
 ## 🙏 免责声明 [![](https://img.shields.io/badge/-免责声明-FFFFFF.svg)](#-免责声明-)
 - 📚 本固件仅供学习研究，严禁用于任何商业用途
 - 🤝 使用本固件产生的所有后果均由使用者自行承担
