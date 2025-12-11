@@ -44,25 +44,6 @@ cp -f $GITHUB_WORKSPACE/configfiles/patch/800-add-rk3399-am40-dtb-to-makefile.pa
 # RK3399示例结束
 # ================================================================
 
-# ================================================================
-# 移植RK3566示例，其他RK35xx可模仿
-# ================================================================
-# 增加jp-tvbox设备
-echo -e "\\ndefine Device/jp_jp-tvbox
-\$(call Device/Legacy/rk3566,\$(1))
-  DEVICE_VENDOR := Jp
-  DEVICE_MODEL := JP TVBOX
-  DEVICE_DTS := rk3568/rk3566-jp-tvbox
-  SUPPORTED_DEVICES += jp,jp-tvbox
-  DEVICE_PACKAGES := kmod-scsi-core
-endef
-TARGET_DEVICES += jp_jp-tvbox" >> target/linux/rockchip/image/legacy.mk
-
-# 复制dts到target/linux/rockchip/dts/rk3568
-cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/rk3566-jp-tvbox.dts target/linux/rockchip/dts/rk3568/
-# ================================================================
-# RK35xx示例结束
-# ================================================================
 
 
 # ================================================================
