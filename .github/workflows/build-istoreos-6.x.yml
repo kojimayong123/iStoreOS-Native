@@ -151,7 +151,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.FILE_DATE }}
-        path: openwrt/bin
+        path: openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/linux-6.6.110/arch/arm64/boot
 
     - name: 整理固件文件
       id: organize
