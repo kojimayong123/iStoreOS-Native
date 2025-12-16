@@ -19,6 +19,7 @@ echo -e "\\ndefine Device/smart_am40
   DEVICE_VENDOR := SMART
   DEVICE_MODEL := AM40
   SOC := rk3399
+  UBOOT_DEVICE_NAME := am40-rk3399
   DEVICE_PACKAGES := wpad-mbedtls kmod-rtw88-8822be kmod-bluetooth kmod-usb-dwc3 \
   kmod-sound-soc-simple-card kmod-sound-soc-rockchip kmod-sound-soc-hdmi-codec \
   kmod-drm-rockchip kmod-drm-panfrost kmod-extcon-usbc-virtual-pd rockchip-cdn-dp-firmware
