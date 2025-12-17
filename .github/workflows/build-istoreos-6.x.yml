@@ -193,7 +193,8 @@ jobs:
         body_path: release.txt
         files: |
           ${{ env.FIRMWARE }}/*am40-squashfs-sysupgrade.img.gz
-
+          ${{ env.FIRMWARE }}/*am40-ext4-sysupgrade.img.gz
+          
     - name: 删除运行记录
       uses: Mattraks/delete-workflow-runs@main
       with:
