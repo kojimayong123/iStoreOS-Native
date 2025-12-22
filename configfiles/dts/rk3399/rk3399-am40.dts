@@ -279,6 +279,9 @@
 };
 
 &hdmi_sound {
+    compatible = "rockchip,rk3399-hdmi";
+    rockchip,cpu = <&i2c3>;
+    rockchip,codec = <&hdmi>;
 	status = "okay";
 };
 
