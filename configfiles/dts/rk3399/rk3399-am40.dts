@@ -269,6 +269,10 @@
 	status = "okay";
 };
 
+&i2s1 {
+    status = "okay";
+};
+
 &hdmi {
 	avdd-0v9-supply = <&vcca0v9_hdmi>;
 	avdd-1v8-supply = <&vcca1v8_hdmi>;
@@ -280,7 +284,7 @@
 
 &hdmi_sound {
     compatible = "rockchip,rk3399-hdmi";
-    rockchip,cpu = <&i2c3>;
+    rockchip,cpu = <&i2s1>;
     rockchip,codec = <&hdmi>;
 	status = "okay";
 };
