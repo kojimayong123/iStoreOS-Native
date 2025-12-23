@@ -23,6 +23,9 @@ echo -e "\\ndefine Device/smart_am40
   DEVICE_PACKAGES := wpad-mbedtls kmod-rtw88-8822be kmod-bluetooth kmod-usb-dwc3 \
   kmod-sound-soc-simple-card kmod-sound-soc-rockchip kmod-sound-soc-hdmi-codec \
   kmod-drm-rockchip kmod-drm-panfrost kmod-extcon-usbc-virtual-pd rockchip-cdn-dp-firmware
+  DEVICE_DTS_DIR := ../dts
+  DEVICE_DTS = rk3399/rk3399-am40.dts
+  KERNEL = kernel-bin | lzma | fit lzma $$(KDIR)/image-rk3399-am40.dtb
 endef
 TARGET_DEVICES += smart_am40" >> target/linux/rockchip/image/armv8.mk
 
