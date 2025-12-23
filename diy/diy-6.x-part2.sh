@@ -25,10 +25,10 @@ echo -e "\\ndefine Device/smart_am40
   kmod-drm-rockchip kmod-drm-panfrost kmod-extcon-usbc-virtual-pd rockchip-cdn-dp-firmware
   DEVICE_DTS_DIR := ../dts
   DEVICE_DTS = rk3399/rk3399-am40
-  KERNEL = kernel-bin | lzma | fit lzma $$(KDIR)/image-rk3399-am40.dtb
+  
 endef
 TARGET_DEVICES += smart_am40" >> target/linux/rockchip/image/armv8.mk
-
+# KERNEL = kernel-bin | lzma | fit lzma $$(KDIR)/image-rk3399-am40.dtb
 # 替换package/boot/uboot-rockchip/Makefile
 cp -f $GITHUB_WORKSPACE/configfiles/uboot-rockchip/Makefile package/boot/uboot-rockchip/Makefile
 
