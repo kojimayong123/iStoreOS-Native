@@ -34,17 +34,18 @@ TARGET_DEVICES += smart_am40" >> target/linux/rockchip/image/armv8.mk
 cp -f $GITHUB_WORKSPACE/configfiles/uboot-rockchip/Makefile package/boot/uboot-rockchip/Makefile
 
 # 复制dts与配置文件到package/boot/uboot-rockchip
-cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi,rk3399-am40.dts} package/boot/uboot-rockchip/src/arch/arm/dts/
-cp -f $GITHUB_WORKSPACE/configfiles/uboot-rockchip/rk3399-am40-u-boot.dtsi package/boot/uboot-rockchip/src/arch/arm/dts/
-cp -f $GITHUB_WORKSPACE/configfiles/uboot-rockchip/am40-rk3399_defconfig package/boot/uboot-rockchip/src/configs/
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi} package/boot/uboot-rockchip/src/arch/arm/dts/
+# cp -f $GITHUB_WORKSPACE/configfiles/uboot-rockchip/rk3399-am40-u-boot.dtsi package/boot/uboot-rockchip/src/arch/arm/dts/
+# cp -f $GITHUB_WORKSPACE/configfiles/uboot-rockchip/am40-rk3399_defconfig package/boot/uboot-rockchip/src/configs/
 
 # 复制dts到files/arch/arm64/boot/dts/rockchip
-cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi,rk3399-am40.dts} target/linux/rockchip/files/arch/arm64/boot/dts/rockchip/
-cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi,rk3399-am40.dts} target/linux/rockchip/dts/rk3399/
-cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi,rk3399-am40.dts} package/boot/uboot-rockchip/src/dts/upstream/src/arm64/rockchip/
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi} target/linux/rockchip/files/arch/arm64/boot/dts/rockchip/
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi} target/linux/rockchip/dts/rk3399/
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3399/{rk3399.dtsi,rk3399-opp.dtsi} package/boot/uboot-rockchip/src/dts/upstream/src/arm64/rockchip/
 
 # 添加dtb补丁到target/linux/rockchip/patches-6.6
 cp -f $GITHUB_WORKSPACE/configfiles/patch/800-add-rk3399-am40-dtb-to-makefile.patch target/linux/rockchip/patches-6.6/
+cp -f $GITHUB_WORKSPACE/configfiles/patch/801-add-rk3399-am40-dtb-to-makefile.patch package/boot/uboot-rockchip/patches/
 # ================================================================
 # RK3399示例结束
 # ================================================================
