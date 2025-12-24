@@ -23,6 +23,7 @@ index 00000000..d3ccdf6f
 @@ -0,0 +1,71 @@
 +# Reference from firefly-rk3399_defconfig
 +CONFIG_ARM=y
+
 +CONFIG_SKIP_LOWLEVEL_INIT=y
 +CONFIG_COUNTER_FREQUENCY=24000000
 +CONFIG_ARCH_ROCKCHIP=y
