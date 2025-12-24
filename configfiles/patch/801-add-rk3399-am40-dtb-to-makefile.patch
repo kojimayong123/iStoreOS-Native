@@ -16,7 +16,7 @@ diff --git a/arch/arm/dts/rk3399-am40-u-boot.dtsi b/arch/arm/dts/rk3399-am40-u-b
 diff --git a/configs/am40-rk3399_defconfig b/configs/am40-rk3399_defconfig
 --- /dev/null
 +++ b/configs/am40-rk3399_defconfig
-@@ -0,0 +1,86 @@
+@@ -0,0 +1,94 @@
 +# Reference from firefly-rk3399_defconfig
 +CONFIG_ARM=y
 +CONFIG_SKIP_LOWLEVEL_INIT=y
@@ -68,7 +68,7 @@ diff --git a/configs/am40-rk3399_defconfig b/configs/am40-rk3399_defconfig
 +CONFIG_PHY_ROCKCHIP_INNO_USB2=y
 +CONFIG_PHY_ROCKCHIP_TYPEC=y
 +CONFIG_PMIC_RK8XX=y
-+CONFIG_REGULATOR_PWM=y
++CONFIG_SPL_DM_REGULATOR_FIXED=y
 +CONFIG_REGULATOR_RK8XX=y
 +CONFIG_PWM_ROCKCHIP=y
 +CONFIG_BAUDRATE=1500000
@@ -87,6 +87,7 @@ diff --git a/configs/am40-rk3399_defconfig b/configs/am40-rk3399_defconfig
 +CONFIG_USB_ETHER_MCS7830=y
 +CONFIG_USB_ETHER_RTL8152=y
 +CONFIG_USB_ETHER_SMSC95XX=y
++CONFIG_USB_KEYBOARD=y
 +CONFIG_ERRNO_STR=y
 +CONFIG_DRM=y
 +CONFIG_DRM_ROCKCHIP=y
@@ -103,6 +104,13 @@ diff --git a/configs/am40-rk3399_defconfig b/configs/am40-rk3399_defconfig
 +CONFIG_SND_SOC_ROCKCHIP=y
 +CONFIG_SND_SOC_ROCKCHIP_I2S=y
 +CONFIG_SND_SIMPLE_CARD=y
++CONFIG_VIDEO=y
++CONFIG_DISPLAY=y
++CONFIG_VIDEO_ROCKCHIP=y
++CONFIG_DISPLAY_ROCKCHIP_HDMI=y
++CONFIG_SYSINFO=y
++CONFIG_SYSINFO_SMBIOS=y
++CONFIG_SPL_GPIO=y
 diff --git a/dts/upstream/src/arm64/rockchip/rk3399-am40.dts b/dts/upstream/src/arm64/rockchip/rk3399-am40.dts
 --- /dev/null
 +++ b/dts/upstream/src/arm64/rockchip/rk3399-am40.dts
