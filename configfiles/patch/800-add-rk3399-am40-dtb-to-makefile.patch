@@ -802,9 +802,12 @@ index 000000000..76c8658f4
 +};
 +
 +&vopb_out_hdmi {
-+	status = "disabled";
++	status = "okay";
 +};
 +
-+&hdmi_in_vopb {
-+	status = "disabled";
++&hdmi_in_vopb{
++        status = "okay";
++};
++&hdmi_in_vopl{
++        status = "disabled";
 +};
