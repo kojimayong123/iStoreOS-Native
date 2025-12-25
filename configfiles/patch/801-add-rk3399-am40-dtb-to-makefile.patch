@@ -106,7 +106,7 @@ diff --git a/configs/am40-rk3399_defconfig b/configs/am40-rk3399_defconfig
 diff --git a/dts/upstream/src/arm64/rockchip/rk3399-am40.dts b/dts/upstream/src/arm64/rockchip/rk3399-am40.dts
 --- /dev/null
 +++ b/dts/upstream/src/arm64/rockchip/rk3399-am40.dts
-@@ -0,0 +1,793 @@
+@@ -0,0 +1,796 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 +/*
 + * Copyright (c) 2017 Fuzhou Rockchip Electronics Co., Ltd.
@@ -894,9 +894,12 @@ diff --git a/dts/upstream/src/arm64/rockchip/rk3399-am40.dts b/dts/upstream/src/
 +};
 +
 +&vopb_out_hdmi {
-+	status = "disabled";
++	status = "okay";
 +};
 +
-+&hdmi_in_vopb {
-+	status = "disabled";
++&hdmi_in_vopb{
++        status = "okay";
++};
++&hdmi_in_vopl{
++        status = "disabled";
 +};
